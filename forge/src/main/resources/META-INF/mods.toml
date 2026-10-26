@@ -1,0 +1,53 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[${versions.kotlin_forge},)"
+license = "MIT"
+
+[[mods]]
+modId = "miehexaddon"
+version = "${version}"
+displayName = "MieHex Addon"
+logoFile = "assets/miehexaddon/icon.png"
+authors = "xm1221"
+description = "MieHex Addon addon for Hex Casting"
+
+[[dependencies.miehexaddon]]
+modId = "forge"
+mandatory = true
+versionRange = "[${versions.forge_dependency},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.miehexaddon]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${versions.minecraft},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.miehexaddon]]
+modId = "architectury"
+mandatory = true
+versionRange = "[${versions.architectury},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.miehexaddon]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[${versions.cloth_config},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.miehexaddon]]
+modId = "hexcasting"
+mandatory = true
+versionRange = "[${versions.hexcasting},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.miehexaddon]]
+modId = "mielib"
+mandatory = true
+versionRange = "[0.0.2,)"
+ordering = "NONE"
+side = "BOTH"

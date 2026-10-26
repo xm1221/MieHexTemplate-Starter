@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "miehexaddon",
+  "version": "${version}",
+  "name": "MieHex Addon",
+  "description": "MieHex Addon addon for Hex Casting",
+  "authors": [
+    "xm1221"
+  ],
+  "contact": {
+    "homepage": "https://xm1221.github.io/miehexaddon",
+    "sources": "https://github.com/xm1221/miehexaddon"
+  },
+  "license": "MIT",
+  "icon": "assets/miehexaddon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [{
+      "adapter": "kotlin",
+      "value": "io.github.xm1221.miehexaddon.fabric.FabricMieHexAddon"
+    }],
+    "client": [{
+      "adapter": "kotlin",
+      "value": "io.github.xm1221.miehexaddon.fabric.FabricMieHexAddonClient"
+    }],
+    "server": [{
+      "adapter": "kotlin",
+      "value": "io.github.xm1221.miehexaddon.fabric.FabricMieHexAddonServer"
+    }],
+    "fabric-datagen": [{
+      "adapter": "kotlin",
+      "value": "io.github.xm1221.miehexaddon.fabric.datagen.FabricMieHexAddonDatagen"
+    }],
+    "modmenu": [{
+      "adapter": "kotlin",
+      "value": "io.github.xm1221.miehexaddon.fabric.FabricMieHexAddonModMenu"
+    }]
+  },
+  "mixins": [
+    "miehexaddon-common.mixins.json",
+    "miehexaddon-fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${versions.minecraft}",
+    "fabricloader": ">=${versions.fabric_loader}",
+    "fabric-api": ">=${versions.fabric_api}",
+    "fabric-language-kotlin": ">=${versions.kotlin_fabric}",
+    "architectury": ">=${versions.architectury}",
+    "hexcasting": ">=${versions.hexcasting}",
+    "cloth-config": ">=${versions.clothConfig}",
+    "mielib": ">=0.0.2"
+  },
+  "suggests": {
+    "modmenu": ">=${versions.modMenu}"
+  }
+}

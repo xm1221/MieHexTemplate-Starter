@@ -1,0 +1,4 @@
+# Deliberately broken cases (expected to be OK, but are not): scripts/hexcli-check.sh -f hexcli/examples-broken.tsv
+# shows how the check reports the two failure types; this file is expected to FAIL.
+typo-parse-error	num_2 miehexaddon:sqaure	OK	4.00
+type-mishap	const/true miehexaddon:square	OK	1.00

@@ -1,0 +1,22 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/updating/#never-change-the-answers-file-manually
+_commit: 2bf8ace
+_src_path: template-src
+advanced: true
+capitalize_platforms: false
+classname: MieHexAddon
+default_branch: main
+description: MieHex Addon addon for Hex Casting
+display_name: MieHex Addon
+github_repo: miehexaddon
+github_user: xm1221
+homepage_url: https://xm1221.github.io/miehexaddon
+java_package: io.github.xm1221.miehexaddon
+kotlin_package: io.github.xm1221.miehexaddon
+mappings_name: Mojmap
+minecraft_version_in_mod_version: true
+mit_license: true
+mod_version: 0.1.0
+modid: miehexaddon
+sources_url: https://github.com/xm1221/miehexaddon
+use_mielib: true

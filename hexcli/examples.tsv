@@ -1,0 +1,10 @@
+# HexCLI examples for MieHex Addon. Run: scripts/hexcli-check.sh  (format: see the script header)
+# name	code	expected outcome	expected stack (bottom -> top)	message regex
+add	num_1 num_2 add	OK	3.00
+stack-ops	num_5 duplicate num_7 swap	OK	5.00 | 7.00 | 5.00
+square	num_7 miehexaddon:square	OK	49.00
+square-thoth-loop	( miehexaddon:square ) num_1 num_2 num_3 num_3 last_n_list for_each	OK	[1.00, 4.00, 9.00]
+congratulate	get_caster miehexaddon:congratulate	OK	(empty)	doing a good job
+# expected failures: these PASS because the failure type is the expected one
+expect-parse-error	num_1 frobnicate num_2 add	PARSE_ERROR	3.00
+expect-mishap	miehexaddon:square	MISHAP	-

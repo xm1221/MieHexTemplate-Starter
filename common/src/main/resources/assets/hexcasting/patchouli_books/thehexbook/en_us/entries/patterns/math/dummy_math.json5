@@ -1,0 +1,16 @@
+{
+  name: "miehexaddon.book.patterns.math.dummy_math",
+  category: "hexcasting:patterns",
+  icon: "minecraft:comparator",
+  advancement: "hexcasting:root",
+  pages: [
+    {
+      type: "hexcasting:pattern",
+      op_id: "miehexaddon:square",
+      anchor: "miehexaddon:square",
+      input: "num",
+      output: "num",
+      text: "miehexaddon.book.patterns.math.dummy_math.square",
+    },
+  ],
+}
